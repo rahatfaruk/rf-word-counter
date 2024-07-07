@@ -2,19 +2,22 @@
 
 Simple **word counter** web app. When user types or paste any text in the textarea, the app counts how many words and characters (excluding spaces and line breaks). 
 
-It is a part of my vanilla js projects. Developed by **Rahat Faruk** (me).
+It is a part of my vanilla js projects. Developed by **Rahat Faruk** (me). 
+  - Live link: [rf-word-counter.netlify.app](https://rf-word-counter.netlify.app) 
+  - Read [my explanation article on dev.to](https://dev.to/rahatfaruk/rf-word-counter-3jph) 
 
 **Tech**: html, css and javascript.
 
 ### Steps (js):
-1. Get all important elements
-2. we want to count words immediately after typing or pasting text into textarea. So, we add `input` event to the textarea.
-3. get text inside textarea. use `text.trim()` method to remove extra spaces from the start and end of the text.
-4. get array of all words (without spaces and line-breaks) using regex and put inside `words` variable. Use `text.match(regex)` method to get array of matched results. The regex is ` /\S+/gm `
-  - The regex flags at the end: 'g' means global match; 'm' means multi-lines.
-  - `\S` matches any non-whitespace character
-  - `+` matches the previous token between one and unlimited times
-5. update results. If textarea doesn't contain any chars, the `words` is null; otherwise it's an array. So, for `null` value, we show `0`. Otherwise, we count and show the results. 
-  - use `words.length` to count words
-  - join all words inside `words` array using `words.join('')`; get the legth of resulting string to count characters. 
-
+1. Get all important elements.
+2. Add the `input` event to the textarea to count words immediately after typing or pasting text.
+3. Get the text inside the textarea.
+4. Use `text.match(/\S+/gm)` to get an array of all words (excluding spaces and line breaks) and store it in the `words` variable. Explanation of the regex:
+  - `g` flag means global match.
+  - `m` flag means multi-line.
+  - `\S` matches any non-whitespace character.
+  - `+` matches the previous token one or more times.
+5. Calculate the results. If the textarea is empty, `words` is `null`; otherwise, it's an array. Return `0` for `null`, otherwise count the words.
+  - Use `words.length` to count words.
+  - Use `text.length` to get the total number of characters.
+6. Update the UI with the results.
