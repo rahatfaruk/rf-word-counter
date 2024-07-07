@@ -1,0 +1,65 @@
+/* ## resets and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body { padding: 1rem; }
+
+h1 {
+  margin: 1rem 0 1.5rem;
+  text-align: center;
+}
+
+textarea {
+  display: block;
+  height: 100px;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: .5rem;
+  background: #dfdfdf;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+/* ## app styles */
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.textarea-and-result {
+  padding: 2rem 1rem;
+  border: 2px solid #ccc;
+  box-shadow: 3px 3px 8px #ccc;
+  border-radius: .25rem;
+}
+
+.result-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+.result-container p {
+  padding: 1rem;
+  border-radius: .5rem;
+  background: #dfdfdf;
+  text-align: center;
+}
+.result-container p span {
+  display: block;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+}
+
+.attribution {
+  margin-top: 1.5rem;
+  color: #999;
+  font-size: .9rem;
+  text-align: center;
+}
