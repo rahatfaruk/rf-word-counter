@@ -10,17 +10,23 @@
 <body>
   <!-- ## app -->
   <div class="app">
-    <h1>RF Word Counter</h1>
+    <div>
+      <h1>RF Word Counter</h1>
+      <p class="lead">Count words, characters and whitespaces of your text.</p>
+    </div>
   
     <div class="textarea-and-result">
       <!-- results -->
       <div class="result-container">
         <p><span id="words">0</span> Words</p>
         <p><span id="chars">0</span> Characters</p>
+        <p><span id="spaces">0</span> Spaces</p>
       </div>
       <!-- textarea -->
       <textarea placeholder="type or paste any text!"></textarea>
     </div>
+
+    <p class="note">Note: Characters and whitespaces include spaces and line breaks. Single characters also count as words.</p>
 
     <!-- attribution -->
     <p class="attribution">Developed by Rahat Faruk</p>

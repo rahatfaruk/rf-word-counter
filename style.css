@@ -9,7 +9,13 @@
 body { padding: 1rem; }
 
 h1 {
-  margin: 1rem 0 1.5rem;
+  margin: 1rem 0 .5rem;
+  text-align: center;
+}
+
+.lead {
+  color: #999;
+  font-size: 1.125rem;
   text-align: center;
 }
 
@@ -36,6 +42,7 @@ textarea {
   border: 2px solid #ccc;
   box-shadow: 3px 3px 8px #ccc;
   border-radius: .25rem;
+  margin: 2rem 0;
 }
 
 .result-container {
@@ -57,8 +64,8 @@ textarea {
   margin-bottom: .5rem;
 }
 
-.attribution {
-  margin-top: 1.5rem;
+.attribution, .note {
+  margin-top: 1rem;
   color: #999;
   font-size: .9rem;
   text-align: center;
