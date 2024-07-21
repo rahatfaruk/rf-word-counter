@@ -12,18 +12,22 @@
   <div class="app">
     <div>
       <h1>RF Word Counter</h1>
-      <p class="lead">Count words, characters and whitespaces of your text.</p>
+      <p class="lead">Count words, characters and whitespaces of your text</p>
     </div>
   
     <div class="textarea-and-result">
       <!-- results -->
       <div class="result-container">
         <p><span id="words">0</span> Words</p>
-        <p><span id="chars">0</span> Characters</p>
+        <p><span id="chars">0</span> Chars</p>
         <p><span id="spaces">0</span> Spaces</p>
       </div>
       <!-- textarea -->
-      <textarea placeholder="type or paste any text!"></textarea>
+      <textarea placeholder="type or paste any text here!"></textarea>
+
+      <div class="btns">
+        <button id="remove-spaces-btn" class="btn">remove multi spaces</button>
+      </div>
     </div>
 
     <p class="note">Note: Characters and whitespaces include spaces and line breaks. Single characters also count as words.</p>

@@ -11,25 +11,42 @@ body { padding: 1rem; }
 h1 {
   margin: 1rem 0 .5rem;
   text-align: center;
+  color: royalblue;
 }
 
+textarea {
+  display: block;
+  height: 120px;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #dfdfdf;
+  border-radius: .5rem;
+  background: #efefef;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+/* ## utilities */
 .lead {
   color: #999;
   font-size: 1.125rem;
   text-align: center;
 }
 
-textarea {
-  display: block;
-  height: 100px;
-  width: 100%;
-  padding: 1rem;
-  border: none;
-  border-radius: .5rem;
-  background: #dfdfdf;
-  font-size: 1rem;
-  resize: vertical;
+.btns {
+  margin-top: 1rem;
 }
+.btn {
+  padding: .5rem 1rem;
+  border: 0;
+  border-radius: .25rem;
+  cursor: pointer;
+  background: royalblue;
+  color: white;
+  transition: background .25s;
+}
+
+.btn:hover {background: darkblue;}
 
 /* ## app styles */
 .app {
